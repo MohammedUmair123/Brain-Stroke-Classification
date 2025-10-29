@@ -51,3 +51,16 @@ What is included
     - save_models/my_gru_model.keras
 5. Plots for metrics and ROC curve.
 6. Example background image for the UI.
+
+Basic usage (Colab)
+
+- Mount Google Drive and set dataset paths.
+- Run the training cells to:
+- extract features
+- fit PCA
+- train with cross validation
+- save models
+- Run the inference cells to:
+- load pca_model.pkl and my_gru_model.keras
+- launch the Gradio app
+- upload a CT image and view the result
