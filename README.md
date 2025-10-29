@@ -18,6 +18,7 @@ Source: Kaggle, “Brain Stroke CT Image Dataset”.
 Two folders: Normal and Stroke.
 
 Example paths used in Colab:
+
 /content/drive/MyDrive/Brain_Data_Organised/Normal
 
 /content/drive/MyDrive/Brain_Data_Organised/Stroke 
@@ -32,3 +33,23 @@ How it works (short version)
 6. Train with 10-fold stratified cross validation.
 7. Save the trained GRU model and the fitted PCA model.
 8. Use the Gradio UI to upload an image and get a prediction.
+
+Results from the example run
+
+1. Accuracy about 95.7% across folds.
+2. AUC about 0.99.
+3. Normal: precision 0.94, recall 1.00, F1 0.97.
+4. Stroke: precision 1.00, recall 0.89, F1 0.94.
+
+What is included
+
+1. Colab-friendly training code.
+
+2. Inference script with Gradio UI.
+
+3. Saved models:
+    . save_models/pca_model.pkl
+    . save_models/my_gru_model.keras
+
+4. Plots for metrics and ROC curve.
+5. Example background image for the UI.
