@@ -15,7 +15,10 @@ The repository contains all the source code, development notebooks, and suppleme
 # Dataset 
 
 Source: Kaggle, “Brain Stroke CT Image Dataset”.
+
 Two folders: Normal and Stroke.
+
+Link for Dataset: https://www.kaggle.com/datasets/afridirahman/brain-stroke-ct-image-dataset 
 
 Example paths used in Colab:
 
