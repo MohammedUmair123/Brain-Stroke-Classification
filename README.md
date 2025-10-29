@@ -5,14 +5,28 @@ The repository contains all the source code, development notebooks, and suppleme
 
 What this project does
 
-Classifies brain CT images as Normal or Stroke.
+1. Classifies brain CT images as Normal or Stroke.
+2. Uses VGG19 to extract image features.
+3. Reduces feature size with PCA.
+4. Trains a GRU model for final classification.
+5. Provides a Gradio app for easy testing with a single image.
+6. Adds optional audio feedback using gTTS.
 
-Uses VGG19 to extract image features.
+Dataset 
 
-Reduces feature size with PCA.
+Source: Kaggle, “Brain Stroke CT Image Dataset”.
+Two folders: Normal and Stroke.
+Example paths used in Colab:
+/content/drive/MyDrive/Brain_Data_Organised/Normal
+/content/drive/MyDrive/Brain_Data_Organised/Stroke 
 
-Trains a GRU model for final classification.
+How it works (short version)
 
-Provides a Gradio app for easy testing with a single image.
-
-Adds optional audio feedback using gTTS.
+1. Load CT images and resize to 224x224.
+2. Normalize pixel values to 0–1.
+3. Extract deep features using VGG19 without the top layer.
+4. Flatten features and apply PCA to keep about 95% variance.
+5. Feed PCA features to a GRU model.
+6. Train with 10-fold stratified cross validation.
+7. Save the trained GRU model and the fitted PCA model.
+8. Use the Gradio UI to upload an image and get a prediction.
