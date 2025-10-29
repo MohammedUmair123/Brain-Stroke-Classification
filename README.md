@@ -44,12 +44,10 @@ Results from the example run
 What is included
 
 1. Colab-friendly training code.
-
 2. Inference script with Gradio UI.
-
 3. Saved models:
     . save_models/pca_model.pkl
+   
     . save_models/my_gru_model.keras
-
-4. Plots for metrics and ROC curve.
-5. Example background image for the UI.
+5. Plots for metrics and ROC curve.
+6. Example background image for the UI.
