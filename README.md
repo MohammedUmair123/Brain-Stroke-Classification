@@ -16,8 +16,10 @@ Dataset
 
 Source: Kaggle, “Brain Stroke CT Image Dataset”.
 Two folders: Normal and Stroke.
+
 Example paths used in Colab:
 /content/drive/MyDrive/Brain_Data_Organised/Normal
+
 /content/drive/MyDrive/Brain_Data_Organised/Stroke 
 
 How it works (short version)
