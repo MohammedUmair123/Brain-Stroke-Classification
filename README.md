@@ -107,7 +107,5 @@ Example paths used in Colab:
 # Credits
 
 1. Kaggle dataset: Brain Stroke CT Image Dataset by Afridi Rahman.
-2. VGG19 from TensorFlow Keras.
-3. PCA and metrics from scikit-learn.
-4. UI by Gradio.
-5. Audio by gTTS.
+2. UI by Gradio.
+3. Audio by gTTS.
